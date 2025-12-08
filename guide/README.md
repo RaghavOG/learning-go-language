@@ -44,6 +44,16 @@ Recommended order
    - Worker patterns, `sync.WaitGroup`, `sync.Mutex`, `atomic` basics  
    - Avoid data races: never share writable data without sync
 
+Examples to run (in `guide/examples`)
+-------------------------------------
+- Basics/types: `01_vars_and_types.go`
+- Control/functions: `02_control_and_funcs.go`
+- Structs/interfaces: `03_structs_interfaces.go`
+- Collections: `04_collections_maps_slices.go`
+- Concurrency intro: `05_concurrency.go`
+- Goroutine basics: `06_goroutines_basics.go`
+- Channels patterns: `07_channels_patterns.go`
+
 8) Testing & tooling  
    - `go test`, table tests, benchmarks, examples  
    - `go fmt`, `go vet`, `golangci-lint` (if used), `go mod tidy`  

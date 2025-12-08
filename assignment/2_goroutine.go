@@ -25,3 +25,23 @@ func main() {
 	wg.Wait()
 }
 
+
+// This function will receive a pointer to a WaitGroup.
+/***
+
+
+Because WaitGroup ka internal counter shared hota hai across goroutines.
+
+If you passed it by value:
+
+each goroutine would get its own copy
+
+wg.Done() would update the copied version
+
+original wg in main() kabhi reduce nahi hota
+
+wg.Wait() → deadlock (infinite wait)
+
+/// This is why we pass a pointer to the WaitGroup to ensure all goroutines
+work on the same shared counter.
+***/
