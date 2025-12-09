@@ -32,3 +32,30 @@ func main() {
 	}
 }
 
+/***
+
+
+So normally, you’d write:
+
+for index, value := range nums {
+    fmt.Println(index, value)
+}
+
+
+But in our case:
+
+for _, n := range nums
+
+
+The _ means “ignore this variable”.
+So:
+
+_ → we DON’T care about index
+
+n → we want the value
+
+Meaning:
+
+“For each number n in nums, launch a goroutine.”
+
+***/
